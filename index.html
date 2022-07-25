@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/0764d132c8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <section id="firsth1" class="section">
+                <h1 class="title has-text-centered is-size-1">
+                    Laugh A Little
+                    <i class="fa-regular fa-face-grin-squint-tears fa-lg fa-beat-fade"
+                        style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;"></i>
+                </h1>
+            </section>
+            <section class="section">
+                <div class="block">
+                    <div class="columns is-vcentered">
+                        <div class="column is-half">
+                            <h1 class="title has-text-centered is-size-2">Your Favourite Jokes</h1>
+
+
+                            <div class="block">
+                                <ul id="jokeList" class=" is-size-5 has-text-centered"></ul>
+                            </div>
+                        </div>
+                        <div class="column is-half">
+                            <h1 class="subtitle has-text-centered is-size-3">
+                                Click To Get A New Joke
+                            </h1>
+                            <div class="buttons is-centered is-relative">
+                                <button
+                                    class="js-modal-trigger button is-primary button is-large button is-rounded is-centered"
+                                    id="jokeButton" data-target="modal-js-example">
+                                    New Joke
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-js-example" class="modal">
+                        <div class="modal-background"></div>
+
+                        <div class="modal-content">
+                            <div class="box">
+                                <p class="is-size-1 has-text-weight-semibold has-text-black-bis" id="jokeInModal">
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </section>
+    <button class="modal-close is-large" aria-label="close"></button>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
